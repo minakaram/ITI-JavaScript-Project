@@ -77,16 +77,6 @@ email.addEventListener("input", function () {
     errorEmail.style.display = "block";
   }
 });
-password.addEventListener("input", function () {
-  let currentVal = password.value;
-  let pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-  const valid = pattern.test(currentVal);
-  if (valid) {
-    errorPassword.style.display = "none";
-  } else {
-    errorPassword.style.display = "block";
-  }
-});
 
 function signupForm(e) {
   let nameVal = newUsername.value;
@@ -115,7 +105,7 @@ function signupForm(e) {
   }
   e.preventDefault();
 }
- var exported;
+var exported;
 
 function signinForm(e) {
   e.preventDefault();
@@ -133,11 +123,10 @@ function signinForm(e) {
 
   if (matchingData) {
     let username = matchingData.nameVal;
-    localStorage.setItem("user",username)
+    localStorage.setItem("user", username);
     console.log(username);
-    document.location = "../index.html";
+    document.location.replace("../index.html");
   } else {
     alert("Incorrect Login Credentials");
   }
 }
-
