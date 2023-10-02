@@ -81,19 +81,14 @@ password.addEventListener("input", function () {
   let currentVal = password.value;
   let pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
   const valid = pattern.test(currentVal);
-  // if (valid) {
-  //   errorPassword.style.display = "none";
-  // } else {
-  //   errorPassword.style.display = "block";
-  // }
+  if (valid) {
+    errorPassword.style.display = "none";
+  } else {
+    errorPassword.style.display = "block";
+  }
 });
 
 function signupForm(e) {
-  e.preventDefault();
-  if (document.querySelectorAll(".errorStyle").style.display == "block") {
-    alert("enter valid data");
-    return;
-  }
   let nameVal = newUsername.value;
   let emailVal = newEmail.value;
   let passwordVal = newPassword.value;
@@ -113,13 +108,14 @@ function signupForm(e) {
     localStorage.setItem("formData", JSON.stringify(formData));
     document.getElementById("signupForm").reset();
     document.querySelector(".sign-up-container #newAccUsername").focus();
-    alert("You are successfully signed up");
+    alert("You are successfully sign in");
     container.classList.remove("right-panel-active");
   } else {
     alert("Opssss Duplication found");
   }
+  e.preventDefault();
 }
-var exported;
+ var exported;
 
 function signinForm(e) {
   e.preventDefault();
@@ -137,9 +133,11 @@ function signinForm(e) {
 
   if (matchingData) {
     let username = matchingData.nameVal;
-    localStorage.setItem("user", username);
+    localStorage.setItem("user",username)
+    console.log(username);
     document.location = "../index.html";
   } else {
     alert("Incorrect Login Credentials");
   }
 }
+
