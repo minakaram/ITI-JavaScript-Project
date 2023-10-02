@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form
+          action="#"
+          method="get"
+          onsubmit="signupForm(event)"
+          id="signupForm"
+        >
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class=""
+              ><img
+                style="width: 100%"
+                class="social-img"
+                src="media/facebook (2).png"
+                alt="facebook"
+            /></a>
+            <a href="#" class=""
+              ><img
+                style="width: 80%"
+                class="social-img"
+                src="media/google (2).png"
+                alt="google"
+            /></a>
+            <a href="#" class=""
+              ><img
+                style="width: 90%"
+                class="social-img"
+                src="media/linkedin (1).png"
+                alt="linkedin"
+            /></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input
+            type="text"
+            placeholder="Name"
+            name="newAccUsername"
+            id="newAccUsername"
+            required
+          />
+          <p class="errorStyle" id="errorNewUsername">
+            Please enter a valid username
+          </p>
+          <input
+            type="email"
+            placeholder="Email"
+            name="newAccEmail"
+            id="newAccEmail"
+            required
+          />
+          <p class="errorStyle" id="errorNewEmail">
+            Please ease enter a valid email
+          </p>
+          <input
+            type="password"
+            placeholder="Password"
+            name="newAccPassword"
+            id="newAccPassword"
+            required
+          />
+          <p class="errorStyle" id="errorNewPassword">
+            Please enter a valid password
+          </p>
+          <div class="remember-container">
+            <input
+              type="checkbox"
+              value="lsRememberMe"
+              id="rememberMe"
+              required
+            />
+            <label for="rememberMe">Remember me</label>
+          </div>
+          <button class="form-btn">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="" method="get" onsubmit="signinForm(event)">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class=""
+              ><img
+                style="width: 100%"
+                class="social-img"
+                src="media/facebook (2).png"
+                alt="facebook"
+            /></a>
+            <a href="#" class=""
+              ><img
+                style="width: 80%"
+                class="social-img"
+                src="media/google (2).png"
+                alt="google"
+            /></a>
+            <a href="#" class=""
+              ><img
+                style="width: 90%"
+                class="social-img"
+                src="media/linkedin (1).png"
+                alt="linkedin"
+            /></a>
+          </div>
+          <span>or use your account</span>
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+          />
+          <p class="errorStyle" id="errorEmail">Please enter a valid email</p>
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+            required
+          />
+          <p class="errorStyle" id="errorPassword">
+            Please enter a valid password
+          </p>
+          <a href="#">Forgot your password?</a>
+          <button id="signinBtn" class="form-btn">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost form-btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost form-btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>DOUX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="xzoom/xzoom.min.css">
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="scroll-up" id="scrolling">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    <!----------------------------------------------- mouse animation ------------------------------------------------>
+
+    <div id="mouse-1" class="cursor1"></div>
+    <div id="mouse-2" class="cursor2"></div>
+    <!----------------------------------------------- left side navbar ---------------------------------------------->
+
+
+
+
+    <div class="grayOverlay" id="layerNav" onclick="normalState()"></div>
+
+    <aside class="leftNav" id="NavLeft">
+        <div class="d-flex flex-column w-100">
+            <div class="d-flex justify-content-between w-100 align-content-center mb-2">
+                <picture class="w-50 picWid"><img src="images/logo.png" class="w-100 mb-1 pb-0" alt=""></picture>
+                <div class="toNorm fs-4 px-2  fw-bold align-self-end align-self-center" onclick="normalState()">X</div>
+            </div>
+            <!-- the nav bar elements -->
+            <ul class="list-unstyled w-100 d-flex flex-column">
+                <li class="homeli my-2">
+                    <div class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bolder fs-6">Home</div><i
+                            class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                    </div>
+                    <ul id="homeFun" class="d-none">
+                        <a href="">Home 1</a>
+                        <hr>
+                        <a href="">Home 2</a>
+                        <hr>
+                        <a href="">Home 3</a>
+                        <hr>
+                        <a href="">Home 4</a>
+                        <hr>
+                        <a href="">Home 5</a>
+                        <hr>
+                        <a href="">Home 6</a>
+                        <hr>
+                        <a href="">Home 7</a>
+                    </ul>
+                </li>
+                <li class="aboutli my-2">
+                    <div class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6 ">About</div><i
+                            class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                    </div>
+                    <ul id="aboutFun" class="d-none">
+                        <a href="">About 1</a>
+                        <hr>
+                        <a href="">About 2</a>
+                        <hr>
+                        <a href="">About 3</a>
+                        <hr>
+                        <a href="">About 4</a>
+                        <hr>
+                        <a href="">About 5</a>
+                        <hr>
+                        <a href="">About 6</a>
+                        <hr>
+                        <a href="">About 7</a>
+                    </ul>
+                <li>
+                    <div
+                        class="d-flex justify-content-between blogli my-2 border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6">Blog</div><i
+                            class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                    </div>
+                    <ul id="blogFun" class="d-none">
+                        <div class="blogStylesli">
+                            <div
+                                class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary mb-2 py-2">
+                                <div>Blog Styles</div><i
+                                    class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                            </div>
+                        </div>
+
+                        <ul id="blogStylesFun" class="d-none">
+                            <a href="">Styles 1</a>
+                            <hr>
+                            <a href="">Styles 2</a>
+                            <hr>
+                            <a href="">Styles 3</a>
+                        </ul>
+                        <a href="">Review Posts</a>
+                        <hr>
+                        <a href="">Post Styles</a>
+                    </ul>
+                </li>
+                <li class="my-2">
+                    <div
+                        class="d-flex justify-content-between gamesli border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6">Games</div><i
+                            class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                    </div>
+                    <ul id="gamesFun" class="d-none">
+                        <div class="gameListli">
+                            <div
+                                class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary py-1 my-2">
+                                <div>Game Listing Styles</div><i
+                                    class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                            </div>
+                        </div>
+                        <ul id="gameListFun" class="d-none">
+                            <a href="">Game Styles 1</a>
+                            <hr>
+                            <a href="">Review Games 2</a>
+                            <hr>
+                            <a href="">Post Games 3</a>
+                        </ul>
+                        <a href="">game datails</a>
+                        <hr>
+                        <a href="">Categorized games</a>
+                    </ul>
+                </li>
+                <li class="communityli my-2">
+                    <div class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6">Community</div>
+                    </div>
+                <li class="esportli my-2">
+                    <div class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6">eSport</div>
+                    </div>
+                <li class="pagesli my-2">
+                    <div class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6">Pages</div><i
+                            class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                    </div>
+                    <ul id="pagesFun" class="d-none">
+                        <a href="">gallery</a>
+                        <hr>
+                        <a href="">page example 1</a>
+                        <hr>
+                        <a href="">page example 2</a>
+                        <hr>
+                        <a href="">page example 3</a>
+                        <hr>
+                        <a href="">FAQ</a>
+                        <hr>
+                        <a href="">shop</a>
+                    </ul>
+                </li>
+                <li class="contactli my-2">
+                    <div class="d-flex justify-content-between border-bottom border-bottom-2 border-secondary p-2">
+                        <div class="fw-bold fs-6">Contact</div><i
+                            class="fa-solid fa-chevron-down align-self-center text-secondary"></i>
+                    </div>
+                    <ul id="contactFun" class="d-none">
+                        <a href="">contact 1</a>
+                        <hr>
+                        <a href="">cantact 2</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="elements">
+            <ul class="social-links list-unstyled d-flex flex-wrap">
+                <li class="pe-2"><a href="https://www.facebook.com/gloriathemes/" class="facebook" title="Facebook"
+                        target="_blank"><i class="fab fa-facebook-f text-black fs-5"></i></a></li>
+                <li class="px-2"><a href="https://twitter.com/GloriaThemes" class="twitter" title="Twitter"
+                        target="_blank"><i class="fab fa-twitter text-black fs-5"></i></a></li>
+                <li class="px-2"><a href="https://plus.google.com/111420305296774523403" class="google-plus"
+                        title="Google Plus" target="_blank"><i class="fab fa-google-plus-g text-black fs-5"></i></a>
+                </li>
+                <li class="px-2"><a href="https://www.youtube.com/channel/UCQ33nDAYSrv_IdPH71q33iQ" class="youtube"
+                        title="YouTube" target="_blank"><i class="fab fa-youtube text-black fs-5"></i></a></li>
+                <li class="px-2"><a href="https://www.instagram.com/gloriathemes/" class="instagram" title="Instagram"
+                        target="_blank"><i class="fab fa-instagram text-black fs-5"></i></a></li>
+                <li class="ps-2"><a href="https://www.twitch.tv" class="twitch" title="Twitch" target="_blank"><i
+                            class="fab fa-twitch text-black fs-5"></i></a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+
+
+
+    <!------------------------------------------------ header of nav ------------------------------------------------->
+    <div class="header-fixed container-fluid" id="first-head-nav">
+        <div class="container-fluid" style="position: fixed;top: 0;z-index: 10000;left: 0;">
+            <div class="row alt-nav p-3">
+                <div class="col-sm-12 d-flex justify-content-between">
+                    <img src="images/logo.png" alt="">
+                    <span style="font-weight: 800;border: 1ps solid black !important;" onclick="navUp()">&#9776</span>
+                </div>
+            </div>
+        </div>
+        <div class="row header1-row">
+            <div class="col-lg-9 social-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+            <div class="form-inputs col-lg-2">
+                <div id="login-icon-nav" onclick="showLogin()">
+                    <i style="font-size: 1.7rem;" class="fa-solid fa-circle-user"></i>
+                </div>
+
+                <ul id="dropDownLogin" class="list-unstyled">
+                    <li id="userNameValue" class="text-muted" style="text-align: center;padding: 10px 9px;">mina karam
+                    </li>
+                    <li>Setting</li>
+                    <li>Privacy</li>
+                    <li>
+                        <a href="loginPage/login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid nav-row">
+            <div class="row header2-row">
+                <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                    <img src="images/logo-2.png" alt="">
+                </div>
+                <nav class="col-lg-9 d-flex justify-content-center align-items-center">
+                    <ul style="margin-bottom: 0;">
+                        <li><a class="nav-anchor" href="" style="color: #ffc311;">Home <i
+                                    class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="drop">
+                                <a style="color: #ffc311;" href="">home 1</a><br>
+                                <hr>
+                                <a href="">home 2</a><br>
+                                <hr>
+                                <a href="">home 3</a><br>
+                                <hr>
+                                <a href="">home 4</a><br>
+                                <hr>
+                                <a href="">home 5</a><br>
+                                <hr>
+                                <a href="">home 6</a><br>
+                                <hr>
+                                <a href="">home 7</a><br>
+
+                            </ul>
+                        </li>
+                        <li><a class="nav-anchor" href="">About</a></li>
+                        <li style="position: relative;" class="blogs-drop">
+                            <a class="nav-anchor" href="">Blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="ul-menu">
+                                <li class="xx" style="width: 92%;">
+                                    <a class="dropdown-item" href="#">blogs styles &raquo;</a>
+                                    <ul class="Submenu-in" style="padding: 0;">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Blog 1</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Blog 2</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Blog 3</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Blog 4</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Blog 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="xx" style="width: 92%;">
+                                    <a class="dropdown-item" href="#">review posts &raquo;</a>
+                                    <ul class="Submenu-in" style="padding: 0;">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Review-Post 1</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Review-Post 2</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Review-Post 3</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Review-Post 4</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Review-Post 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="xx" style="width: 92%;">
+                                    <a class="dropdown-item " href="#">
+                                        Posts styles &raquo;
+                                    </a>
+                                    <ul class="Submenu-in" style="padding: 0;">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Post-Style 1</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Post-Style 2</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Post-Style 3</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Post-Style 4</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Post-Style 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-anchor" href="">Games <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="drop">
+                                <a href="">Games listing styles</a><br>
+                                <hr>
+                                <a href="">game datails</a><br>
+                                <hr>
+                                <a href="">Categorized games</a><br>
+                            </ul>
+                        </li>
+                        <li><a class="nav-anchor" href="">Community</a></li>
+                        <li><a class="nav-anchor" href="">eSport</a></li>
+                        <li><a class="nav-anchor" href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="drop">
+                                <a href="">gallery</a><br>
+                                <hr>
+                                <a href="">page example 1</a><br>
+                                <hr>
+                                <a href="">page example 2</a><br>
+                                <hr>
+                                <a href="">page example 3</a><br>
+                                <hr>
+                                <a href="">FAQ</a><br>
+                                <hr>
+                                <a href="">shop</a><br>
+
+                            </ul>
+
+                        </li>
+                        <li><a class="nav-anchor" href="">Contact <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="drop">
+                                <a href="">contact 1</a><br>
+                                <hr>
+                                <a href="">cantact 2</a><br>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------- carusel --------------------------------------------------->
+    <div class="header-container container-fluid">
+
+        <div class="header-p">
+            <p style="max-width:80%; color: white;text-align: center;">
+                Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+            </p>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item header-back1">
+                <div class="header-back1-inner" style="display: flex;text-transform: uppercase;">
+                    <div>
+                        <i class="fa-solid fa-display"></i>
+                        <span> playstation 4</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span> Action, adventure</span>
+                    </div>
+                </div>
+                <h1 style="margin: 20px 0px;">Egypt and world</h1>
+            </div>
+            <div class="item header-back2">
+                <div class="header-back1-inner" style="display: flex;text-transform: uppercase;">
+                    <div>
+                        <i class="fa-solid fa-display"></i>
+                        <span> playstation 4</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span> Action,adventure</span>
+                    </div>
+                </div>
+                <h1 style="margin: 20px 0px;">gloria soccer 2018</h1>
+
+            </div>
+            <div class="item header-back3">
+                <div class="header-back1-inner" style="display: flex;text-transform: uppercase;">
+                    <div>
+                        <i class="fa-solid fa-display"></i>
+                        <span> playstation 4</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span> Action,adventure</span>
+                    </div>
+                </div>
+                <h1 style="margin: 20px 0px;">return of the cars</h1>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------------------------------------- GAMING SECTION ----------------------------------------------->
+    <section class="games-section">
+        <div style="text-transform: uppercase; font-size:3rem; font-weight: 800;max-width: 80%;" class="mb-4">
+            featured <span style="color: #ffc311;">games</span>
+        </div>
+        <div class="container" style="max-width: 90%;">
+            <div class="games-box row">
+                <div class="col-lg-4 col-md-6 col-sm-9" data-aos="fade-right" data-aos-duration="1600">
+                    <div class="card" style="max-height: 23rem;">
+                        <img src="images/snake.jpg" alt="chess" class="card-img" />
+                        <div class="card-body">
+                            <h1 class="card-title">Snake</h1>
+                            <p class="card-info">
+                                This snake game has a bit of a learning curve. It can be hard for players to maneuver
+                                around the map at first.
+                            </p>
+                            <div class="card-btn">
+                                <p class="btn-text">
+                                    <a href="snakeGame/snake.html">Play Now</a>
+                                </p>
+                                <div class="card-btn-hover"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="card" style="max-height: 23rem;">
+                        <img src="images/memory.png" alt="chess" class="card-img" />
+                        <div class="card-body">
+                            <h1 class="card-title">Memory Cards</h1>
+                            <p class="card-info">
+                                Level up your memory for free with this online memory card game. Flip the cards and
+                                match the tiles together in pairs.
+                            </p>
+                            <div class="card-btn">
+                                <p class="btn-text">
+                                    <a href="Memory-Game-main/index.html">Play Now</a>
+                                </p>
+                                <div class="card-btn-hover"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9" data-aos="fade-left" data-aos-duration="1600">
+                    <div class="card" style="max-height: 23rem;">
+                        <img src="images/colorful-bird-with-blue-background-words-angry-birds-it_913665-2941.avif"
+                            alt="chess" class="card-img h-100" />
+                        <div class="card-body">
+                            <h1 class="card-title">Flappy Birds</h1>
+                            <p class="card-info">
+                                is a game played between two opponents on opposite sides of
+                                a board containing 64 squares of alternating colors.
+                            </p>
+                            <div class="card-btn">
+                                <p class="btn-text">
+                                    <a href="flappy/index.html">Play Now</a>
+                                </p>
+                                <div class="card-btn-hover"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="games-btn-container row">
+                    <div class="col-lg-1 col-md-3 game-row">
+                        <div class="game-btn active">ALL</div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 game-row">
+                        <div class="game-btn">ORIGIN</div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 game-row">
+                        <div class="game-btn">PLAY STATION 4</div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 game-row">
+                        <div class="game-btn">STEAM</div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 game-row">
+                        <div class="game-btn">UPLAY</div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 game-row">
+                        <div class="game-btn">XBOX ONE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- comming soon -->
+    <section class="countdown-container" id="countdown-hide">
+        <div class="countdown-inner">
+            <div class="countdown-details">
+                <i style="color: #ffc311">Best Price For You</i>
+                <p>Deal Of The Week</p>
+                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi,
+                    excepturi.</small>
+                <p>Buy now 50% OFF</p>
+            </div>
+            <div class="countdown-timer">
+                <div class="timer-box">
+                    <span class="number" id="timer-day">7</span> days
+                </div>
+                <div class="spliter">:</div>
+                <div class="timer-box">
+                    <span class="number" id="timer-hours">0</span> hours
+                </div>
+                <div class="spliter">:</div>
+                <div class="timer-box">
+                    <span class="number" id="timer-minutes">0</span> minutes
+                </div>
+                <div class="spliter">:</div>
+                <div class="timer-box">
+                    <span class="number" id="timer-seconds">0</span> seconds
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- api section -->
+    <div class="api-section" style="background-color: #F9F9F9;">
+        <div id="container" class="api-container container">
+            <div style="text-transform: uppercase; font-size:3rem; font-weight: 800;max-width: 80%;margin: 60px 0px;">
+                stream <span style="color: #ffc311;">games</span>
+            </div>
+            <div class="row" id="api-row">
+
+            </div>
+            <button id="load-more">Show More</button>
+        </div>
+    </div>
+
+
+
+    
+    <!-- fifa section -->
+
+    <section class="fifa-section container-fluid">
+        <div class="fifa-container row d-flex flex-column flex-lg-row">
+            <div class="fifa-content col-md-6 col-md-offset-1">
+                <h1 class="fifa-heading">
+                    FIFA SOCCER 18 <br />
+                    <span class="isReleased">IS RELEASED!</span>
+                </h1>
+                <p class="fifa-info">
+                    Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi
+                    nullam vehicula ipsum a arcu cursus. Volutpat ac tincidunt vitae
+                    semper. Pellentesque diam volutpat commodo sed egestas egestas
+                    fringilla phasellus faucibus. Ante metus dictum at tempor fames
+                    ac.
+                </p>
+                <div class="fifa-btns">
+                    <div class="card-btn card-btn-fifa">
+                        <div class="card-btn-hover"></div>
+                        <p class="btn-text">READ MORE</p>
+                    </div>
+                    <div class="card-btn card-btn-fifa">
+                        <div class="card-btn-hover"></div>
+                        <p class="btn-text">BUY NOW</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-offset-1">
+                <img src="images/fs-7-1920x950.jpg" class="fifa-img" alt="fifa game" />
+            </div>
+        </div>
+    </section>
+    <!----------------------APPS SECTION--------------------->
+    <div class="container-fluid apps-section" style="background-color: white;">
+        <div class="container apps-section-container">
+            <div class="row justify-content-center align-items-center text-center flex-wrap">
+                <div class="apps-container col-sm-2"> <i class="fa-brands fa-facebook-f"></i>
+                    <p class="apps-info">Facebook</p>
+                </div>
+                <div class="apps-container col-sm-2"> <i class="fa-brands fa-twitter"></i>
+                    <p class="apps-info">Twitter</p>
+                </div>
+                <div class="apps-container col-sm-2"><i class="fa-brands fa-google-plus-g"></i>
+                    <p class="apps-info">Google Plus</p>
+                </div>
+                <div class="apps-container col-sm-2"><i class="fa-brands fa-youtube"></i>
+                    <p class="apps-info">Youtube</p>
+                </div>
+                <div class="apps-container col-sm-2"> <i class="fa-brands fa-instagram"></i>
+                    <p class="apps-info">Instagram</p>
+                </div>
+                <div class="apps-container col-sm-2"> <i class="fa-brands fa-twitch"></i>
+                    <p class="apps-info">Twitch</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- forms -->
+    <div class="container-fluid form-section">
+        <div class="container form-container mx-auto">
+            <div class="d-flex justify-content-around align-items-center form-handle">
+                <h3 class="" style="color:white;font-weight: 700;">NEWSLETTER:</h3>
+                <div
+                    class="form-inputs-div flex-column flex-md-row justify-content-center align-items-center flex-wrap">
+                    <input class="" type="email" name="username" placeholder="Your email address">
+                    <input class="" type="text" name="username" placeholder="First Name">
+                    <input class="" type="text" name="username" placeholder="Last Name">
+                    <button>submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- product -->
+    <section class="product-container xzoom-part py-5 d-flex flex-column justify-content-center align-items-center">
+        <div style="text-transform: uppercase; font-size:3rem; font-weight: 800;max-width: 80%;margin: 60px 0px;">
+            game <span style="color: #ffc311;">shop</span>
+        </div>
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="xzoom_container">
+                        <img class="xzoom" src="images/product-3-560x500.jpg"
+                            xoriginal="images/product-3-560x500.jpg" />
+                        <div class="xzoom-thumbs d-flex justify-content-between  w-100">
+                            <a href="images/product-3-560x500.jpg">
+                                <img src="images/product-3-560x500.jpg" class="xzoom-gallery" width="80"
+                                    xpreview="images/product-3-560x500.jpg">
+                            </a>
+                            <a href="images/product-2-560x500.jpg">
+                                <img src="images/product-2-560x500.jpg" class="xzoom-gallery" width="80">
+                            </a>
+
+                            <a href="images/s-l1600.jpg">
+                                <img src="images/s-l1600.jpg" class="xzoom-gallery" width="80">
+                            </a>
+                            <a href="images/cd_5_angle.jpg">
+                                <img src="images/cd_5_angle.jpg" class="xzoom-gallery" width="80">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 p-2">
+                    <div class="product-info">
+                        <div style="margin-bottom: 30px;" class="product-info-head d-flex justify-content-between pt-2">
+                            <div>
+                                <span style="color:#fff;padding:0.3rem 0.6rem;background-color: #070707;">New</span>
+                                <span style="color: #fff;padding:0.3rem 0.6rem;background-color: #ffc311;">-20%</span>
+                            </div>
+                            <div>
+                                <span class="product-i"><i
+                                        class="fa-solid fa-heart"></i></span>
+                                <span class="product-i"><i
+                                        class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                        </div>
+                        <h2 style="text-transform: uppercase;font-weight: 800;">office coffe back</h2>
+
+                        <div class="mt-3" style="font-weight: 700;">
+                            350.00 EGP <small style="text-decoration: line-through;color: #ffc311;">500.00 EGP</small>
+                        </div>
+                        <div class="my-2">
+                            <i style="color: #ffc311;" class="fa-solid fa-star"></i>
+                            <i style="color: #ffc311;" class="fa-solid fa-star"></i>
+                            <i style="color: #ffc311;" class="fa-solid fa-star"></i>
+                            <i style="color: #ffc311;" class="fa-solid fa-star"></i>
+                            <i style="color: rgb(199, 199, 199);" class="fa-solid fa-star"></i>
+
+                            <span style="margin-left: 10px;">3 Review(s) </span>
+                        </div>
+                        <div>
+                            <strong>Availability:</strong> in stock
+                        </div>
+                        <div class="my-2">
+                            <strong>Brand: </strong> CLOUX
+                        </div>
+                        <p>Purus non enim praesent elementum facilisis. Neque vitae tempus quam pellentesque. Facilisis
+                            mauris sit amet massa vitae tortor condimentum lacinia. Rhoncus dolor purus non enim
+                            praesent elementum facilisis leo. Quisque non tellus orci ac auctor augue mauris. Lobortis
+                            mattis aliquam faucibus purus. Cras pulvinar.
+                        </p>
+                        <hr>
+                        <div class="mt-4 px-3">
+                            <div class="row">
+                                <div class="col-3 justify-content-start">
+                                    <img src="images/product-3-560x500.jpg" width="80px" height="80px" alt="">
+                                </div>
+                                <div class="col-4 d-flex justify-content-center align-items-center"
+                                    style="font-weight: 700;">
+                                    350.00 EGP
+                                </div>
+                                <div class="col-5 d-flex justify-content-start align-items-center">
+                                    <button id="minusButton" style="padding: 0.1rem 1rem;border: none;">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    <span id="shopping-span" style="padding: 0.1rem 1rem;">0</span>
+                                    <button id="plusButton" style="padding: 0.1rem 1rem;border: none;">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                    <div class="cart-shopping">
+                        <div class="mb-2" style="text-transform: uppercase;font-weight: 700;font-size: 1.3rem;">
+                            <i style="color: #e6b00f;" class="fa-solid fa-cart-shopping"></i>
+                            Cart total
+                        </div>
+                        <p>
+                            <span style="color: #e6b00f;">subtotal:</span>
+                            <span id="subTotal" style="color: black;">0</span> EGP
+                        </p>
+                        <p>
+                            <span style="color: #e6b00f;">Shipping:</span>
+                            <span id="shipping" style="color: black;">0</span> EGP
+                        </p>
+                        <p>
+                            <span style="color: #e6b00f;">Total:</span>
+                            <span id="totalCost" style="color: black;">0</span> EGP
+                        </p>
+                        <button class="shopping-button"
+                
+                        >ADD TO CARD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- foooter -->
+    <div class="container-fluid footer-fluid">
+        <div class="container footer-container py-5 g-0">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-inner1">
+                        <div class="footer-about-us mb-3">
+                            <h1 class="mb-5" style="font-weight: 900;font-size: 1.8rem;">ABOUT <span
+                                    style="color: #ffc311;">US</span></h1>
+                            <P class="mt-3">Amet nisl purus in mollis nunc sed id. Commodo
+                                nulla
+                                facilisi nullam vehicula ipsum a
+                                arcu
+                                cursus. Volutpat a tincidunt vitae semper pellentesque diam volutpat.
+                                Volutpat tincidunt.
+                            </P>
+                        </div>
+
+                        <div class="footer-links">
+
+                            <ul class="list-unstyled">
+                                <li><a style="color: #ffc311;" href=""><i class="fa-solid fa-caret-right"></i>Home</a>
+                                </li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>Blog</a></li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>Team</a></li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>eSport</a></li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>Games</a></li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>About</a></li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>Community</a></li>
+                                <li><a href=""><i class="fa-solid fa-caret-right"></i>Contact</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-inner1">
+                        <h1 class="mb-5" style="font-weight: 900;font-size: 1.8rem;text-transform: uppercase;">latest
+                            <span style="color: #ffc311;">news</span>
+                        </h1>
+                        <div class="card mb-3">
+                            <div class="row g-0 justify-content-between align-item-center">
+                                <div class="col-md-4 footer-img-left">
+                                    <img class=""
+                                        src="https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/gallery-3-90x65.jpg"
+                                        alt="">
+                                </div>
+                                <div class="col-md-8 footer-content-right">
+                                    <div class="">
+                                        <a class="">About Space And World</a>
+                                        <p class="card-text"><i class="fa-regular fa-clock"></i> <small class="">January
+                                                2, 2018</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="row g-0 justify-content-between align-item-center">
+                                <div class="col-md-4 footer-img-left">
+                                    <img class=""
+                                        src="https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/video-post-90x65.jpg"
+                                        alt="">
+                                </div>
+                                <div class="col-md-8 footer-content-right">
+                                    <div class="">
+                                        <a class="">New Trailer is Released!</a>
+                                        <p class="card-text"><i class="fa-regular fa-clock"></i> <small class="">January
+                                                2, 2018</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="row g-0 justify-content-between align-item-center">
+                                <div class="col-md-4 footer-img-left">
+                                    <img class=""
+                                        src="https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/post-1-90x65.jpg"
+                                        alt="">
+                                </div>
+                                <div class="col-md-8 footer-content-right">
+                                    <div class="">
+                                        <a class="">Price List of the Games</a>
+                                        <p class="card-text"><i class="fa-regular fa-clock"></i> <small class="">January
+                                                2, 2018</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-inner1">
+                        <h1 class="mb-5" style="font-weight: 900;font-size: 1.8rem;">APPS <span
+                                style="color: #ffc311;">& PLATFORMS</span></h1>
+                        <div class="footer-app-platforms w-100">
+                            <ul class="list-unstyled d-flex flex-wrap justify-content-between"
+                                style="line-height: 20px;">
+                                <li class="mb-4">
+                                    <i style="font-size: 1.5rem;margin-right: 0.8rem;" class="fa-brands fa-apple"></i>
+                                    <div style="text-transform: capitalize;font-size: 0.9rem;">
+                                        buy now via <br>
+                                        <span style="font-weight: 700;">Apple Store</span>
+                                    </div>
+                                </li>
+                                <li class="mb-4">
+                                    <i style="font-size: 1.5rem;margin-right: 0.8rem;"
+                                        class="fa-brands fa-google-play"></i>
+                                    <div style="text-transform: capitalize;font-size: 0.9rem;">
+                                        buy now via <br>
+                                        <span style="font-weight: 700;">Google Play</span>
+                                    </div>
+                                </li>
+                                <li class="mb-4">
+                                    <i style="font-size: 1.5rem;margin-right: 0.8rem;"
+                                        class="fa-brands fa-steam-symbol"></i>
+                                    <div style="text-transform: capitalize;font-size: 0.9rem;">
+                                        buy now via <br>
+                                        <span style="font-weight: 700;">Steam</span>
+                                    </div>
+                                </li>
+                                <li class="mb-4">
+
+                                    <i style="font-size: 1.5rem;margin-right: 0.8rem;" class="fa-brands fa-windows"></i>
+                                    <div style="text-transform: capitalize;font-size: 0.9rem;">
+                                        buy now via <br>
+                                        <span style="font-weight: 700;">winStore Store</span>
+                                    </div>
+                                </li>
+                                <li class="mb-4">
+                                    <i style="font-size: 1.5rem;margin-right: 0.8rem;" class="fa-brands fa-amazon"></i>
+                                    <div style="text-transform: capitalize;font-size: 0.9rem;">
+                                        buy now via <br>
+                                        <span style="font-weight: 700;">Amazon</span>
+                                    </div>
+                                </li>
+                                <li class="mb-4">
+                                    <i style="font-size: 1.5rem;margin-right: 0.8rem;" class="fa-brands fa-paypal"></i>
+                                    <div style="text-transform: capitalize;font-size: 0.9rem;">
+                                        buy now via <br>
+                                        <span style="font-weight: 700;">PayPal</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section" style="background-color: #070707"
+            class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="container" style="max-width: 95%">
+                <div class="row copyright-row align-items-center" style="line-height: 2.4rem">
+                    <div class="col-xl-6 col-lg-12 d-flex logo-copyright-section align-items-center">
+                        <a href="#" style="margin-right: 2rem"><img src="images/logo-2.png" alt="logo"
+                                class="img-fluid" /></a>
+                        <p style="color: white;margin-bottom: 0;">
+                            Copyright © 2023 Cloux - All rights reserved.
+                        </p>
+                    </div>
+                    <div
+                        class="col-xl-6 col-lg-12 copyright-nav-section d-flex  align-items-center justify-content-center">
+                        <nav class="copyright-nav">
+                            <ul class="copyright-list list-unstyled d-flex" style="margin-bottom: 0;">
+                                <li class="Copyright-list-item">
+                                    <a class="Copyright-list-item-link" href="#">Home</a>
+                                </li>
+                                <li class="Copyright-list-item">
+                                    <a class="Copyright-list-item-link" href="#">Help center</a>
+                                </li>
+                                <li class="Copyright-list-item">
+                                    <a class="Copyright-list-item-link" href="#">Contact</a>
+                                </li>
+                                <li class="Copyright-list-item">
+                                    <a class="Copyright-list-item-link" href="#">Career</a>
+                                </li>
+                                <li class="Copyright-list-item">
+                                    <a class="Copyright-list-item-link" href="#">Advertise</a>
+                                </li>
+                                <li class="Copyright-list-item">
+                                    <a class="Copyright-list-item-link" href="#">Terms and Conditions</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="xzoom/xzoom.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
