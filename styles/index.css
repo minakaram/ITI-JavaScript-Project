@@ -377,7 +377,6 @@ body {
   border-top: 2px solid #ffc311;
 }
 
-
 #dropDownLogin li {
   padding: 8px 9px;
   border-bottom: 1px solid rgb(216, 213, 213);
@@ -387,7 +386,6 @@ body {
 #dropDownLogin li a {
   color: black;
   text-decoration: none;
-
 }
 
 #dropDownLogin li:hover,
@@ -405,8 +403,6 @@ body {
 .fa-circle-user:hover {
   color: var(--primary-color);
 }
-
-
 
 @media (width<1100px) {
   .nav-row {
@@ -625,7 +621,12 @@ body {
   z-index: 1000;
   transition: 0.16s;
 }
-
+@media (width<900px) {
+  .cursor1,
+  .cursor2 {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------------- api-section ------------------------------------------------------*/
 
 .api-container {
@@ -1108,12 +1109,12 @@ body {
   background-color: black;
   border: 1px solid black;
 }
-.form-handle{
+.form-handle {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.form-inputs-div{
+.form-inputs-div {
   display: flex;
 }
 
@@ -1128,7 +1129,7 @@ body {
   .form-section button {
     width: 100%;
   }
-  .form-inputs-div{
+  .form-inputs-div {
     width: 100%;
   }
 }
@@ -1166,13 +1167,12 @@ body {
     display: none;
   }
 }
-@media(width<580px){
-  .apps-container{
+@media (width<580px) {
+  .apps-container {
     width: 33%;
     margin-bottom: 1.5rem;
   }
 }
-
 
 /* zoom */
 .product-container {
@@ -1200,31 +1200,31 @@ body {
 }
 
 /* -----------------------------------------------  shopping------------------------------------------------- */
-.product-i{
-  color:#fff;
-  padding:0.3rem 0.6rem;
+.product-i {
+  color: #fff;
+  padding: 0.3rem 0.6rem;
   background-color: #ffc311;
   transition: 0.3s;
   border: 1px solid #fff;
 }
-.product-i:hover{
-  color:var(--primary-color);
+.product-i:hover {
+  color: var(--primary-color);
   background-color: #fff;
   border: 1px solid #ffc311;
 }
-.cart-shopping{
+.cart-shopping {
   background-color: #fff3cf;
   padding: 1.2rem 1.4rem;
 }
-.cart-shopping .shopping-button{
+.cart-shopping .shopping-button {
   background-color: #e6b00f;
   color: white;
-  border:none;
+  border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: 0.3s;
 }
-.cart-shopping .shopping-button:hover{
+.cart-shopping .shopping-button:hover {
   color: #e6b00f;
   background-color: white;
 }
